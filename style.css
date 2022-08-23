@@ -46,22 +46,6 @@ body {
     width: 360px;
 }
 
-.relative {
-    position: absolute;
-    width: 240px;
-    height: 194px;
-    margin-left: 160px;
-    border-radius: 200px 0px 0px 0px;
-    background: rgba(255, 255, 255, 0.1);
-
-}
-
-.absolute {
-    position: relative;
-    top: 60px;
-    left: 210px;
-
-}
 
 .card {
     background: black;
