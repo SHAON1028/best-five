@@ -1,9 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
-
-body {
-    background: #323639;
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+body{
+    background: #151515;
+}
+
+
 
 
 .title {
@@ -62,4 +75,68 @@ body {
 .second {
     Width: 264px;
     Height: 514px;
+}
+.calculate-btn{
+    width: 221px;
+height: 42px;
+left: 1041px;
+top: 1103px;
+color: #FFFFFF;
+font-family: monospace;
+font-size: 20px;
+font-style: normal;
+font-weight: bold;
+background: #015196;
+margin-top: 19px;
+margin-bottom: 29px;
+}
+.budget-text{
+width: 73px;
+height: 22px;
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 22px;
+margin-right: 21px;
+color: #AFAFAF;
+}
+.select-btn{
+    position: absolute;
+width: 221px;
+height: 42px;
+margin-left: 15px;
+background: #015196;
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 22px;
+text-align: center;
+color: #FFFFFF;
+}
+p{
+    color: #AFAFAF;
+}
+.list-text{
+padding-top: 10px;
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 22px;
+text-align: center;
+color: #FFFFFF;
+}
+ol,li{
+    padding-top: 22px;
+}
+
+ol li::marker {
+    color:  #888888;;
+}
+footer{
+    margin-top: 150px;
+    border-top: 1px solid #717171;
+    padding: 50PX;
 }

@@ -5,11 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
+    
     <title>UCL</title>
 </head>
-<body>
-    <header>
+<body >
+    <header >
         <div class="d-flex justify-content-between bg-black ">
             <img class="img-left" src="images/Group 12.png" alt="">
             <div class="mid-content">
@@ -22,8 +24,8 @@
             </div>
         </div>
     </header>
-    <main>
-        <div class="container mt-5 pt-5">
+    <main >
+        <div class="container mt-5 pt-5 ">
             <div class="row ">
                 <!-- player Card -->
                 <div class="threecolum col-9 ">
@@ -40,7 +42,7 @@
                                         <p>30 saves</p>
                                     </div>
 
-                                    <button id="btn-one" class="btn btn-primary btn-lg w-75 rounded-0 ms-4"
+                                    <button id="btn-one" class="select-btn fs-5 fw-bold"
                                         onclick="addToTopfive(this,this.id)">Select</button>
                                 </div>
                             </div>
@@ -57,7 +59,7 @@
                                         <p>120 Assist</p>
                                     </div>
 
-                                    <button id="btn-three" class="btn btn-primary btn-lg w-75 rounded-0 ms-4"
+                                    <button id="btn-three" class="select-btn fs-5 fw-bold"
                                         onclick="addToTopfive(this,this.id)">Select</button>
                                 </div>
                             </div>
@@ -74,7 +76,7 @@
                                         <p>120 Assist</p>
                                     </div>
 
-                                    <button id="btn-four" class="btn btn-primary btn-lg w-75 rounded-0 ms-4"
+                                    <button id="btn-four" class="select-btn fs-5 fw-bold"
                                         onclick="addToTopfive(this,this.id)">Select</button>
                                 </div>
                             </div>
@@ -91,7 +93,7 @@
                                         <p>90 Assist</p>
                                     </div>
 
-                                    <button id="btn-five" class="btn btn-primary btn-lg w-75 rounded-0 ms-4"
+                                    <button id="btn-five" class="select-btn fs-5 fw-bold"
                                         onclick="addToTopfive(this,this.id)">Select</button>
                                 </div>
                             </div>
@@ -108,7 +110,7 @@
                                         <p>120 Assist</p>
                                     </div>
 
-                                    <button id="btn-six" class="btn btn-primary btn-lg w-75 rounded-0 ms-4"
+                                    <button id="btn-six" class="select-btn fs-5 fw-bold"
                                         onclick="addToTopfive(this,this.id)">Select</button>
                                 </div>
                             </div>
@@ -125,7 +127,7 @@
                                         <p>20 Assist</p>
                                     </div>
 
-                                    <button id="btn-seven" class="btn btn-primary btn-lg w-75 rounded-0 ms-4"
+                                    <button id="btn-seven" class="select-btn fs-5 fw-bold"
                                         onclick="addToTopfive(this,this.id)">Select</button>
                                 </div>
                             </div>
@@ -142,7 +144,7 @@
                                         <p>120 Assist</p>
                                     </div>
 
-                                    <button id="btn-eight" class="btn btn-primary btn-lg w-75 rounded-0 ms-4"
+                                    <button id="btn-eight" class="select-btn fs-5 fw-bold"
                                         onclick="addToTopfive(this,this.id)">Select</button>
                                 </div>
                             </div>
@@ -159,7 +161,7 @@
                                         <p>120 Assist</p>
                                     </div>
 
-                                    <button id="btn-nine" class="btn btn-primary btn-lg w-75 rounded-0 ms-4"
+                                    <button id="btn-nine" class="select-btn fs-5 fw-bold"
                                         onclick="addToTopfive(this,this.id)">Select</button>
                                 </div>
                             </div>
@@ -176,7 +178,7 @@
                                         <p>120 Assist</p>
                                     </div>
 
-                                    <button id="btn-ten" class="btn btn-primary btn-lg w-75 rounded-0 ms-4"
+                                    <button id="btn-ten" class="select-btn fs-5 fw-bold"
                                         onclick="addToTopfive(this,this.id)">Select</button>
                                 </div>
                             </div>
@@ -194,33 +196,33 @@
                     <div class="row g-4">
                         <!-- selected v -->
                         <div class="col-12 mb-2">
-                            <h3 class="text-white text-center pt-2">Selected:<span class="text-primary"
+                            <h3 class="text-warning text-center pt-2">Selected:<span class="text-primary ps-2"
                                     id="total-player"></span></h3>
-                            <ol class="text-white fs-3" id="selected-player"></ol>
+                            <ol class="list-text fs-4" id="selected-player"></ol>
                         </div>
                         <!-- selected v end -->
 
                         <!-- Budget -->
                         <div class=" second col-12">
-                            <h3 class="text-center text-white pt-2">Budget</h3>
-                            <label for="" class="text-white">Per Player :</label>
-                            <input id="player-cost" value="0" type="text"
-                                class="text-white bg-black border-2 border-white" style="width: 121px;
+                            <h3 class="text-center text-white pt-2 pb-3">Budget</h3>
+                            <label for="" class="budget-text">Per Player </label>
+                            <input id="player-cost"  type="number"
+                                class="text-white bg-black border-1 border-info rounded-1" style="width: 121px;
                             height: 42px;">
-                            <button id="calulate-btn" class="btn btn-primary btn-lg w-75 rounded-0 ms-4"">Calculate</button>
-                            <p class=" text-white">Player Expenses: $<span id="player-expenses"
-                                    class="text-white">0</span></p>
-                                <label for="" class="text-white">Manager :</label>
-                                <input type="text" id="manager-field" class="text-white bg-black border-2 border-white"
+                            <button id="calulate-btn" class="calculate-btn">Calculate</button>
+                            <p class=" text-white">Player Expenses <span class="ps-4">$<span id="player-expenses"
+                                class="text-white"></span></span></p>
+                                <label for="" class="budget-text">Manager</label>
+                                <input type="text" id="manager-field" class="text-white bg-black border-1 border-info rounded-1 mb-3"
                                     style="width: 121px;
                             height: 42px;">
-                                <label for="" class="text-white">Coach :</label>
-                                <input type="text" id="coach-field" class="text-white bg-black border-2 border-white"
+                                <label for="" class="budget-text">Coach</label>
+                                <input type="text" id="coach-field" class="text-white bg-black border-1 border-info rounded-1 mb-4 "
                                     style="width: 121px;
                             height: 42px;">
-                                <button class="btn btn-primary btn-lg w-75 rounded-0 ms-4"
+                                <button class="calculate-btn"
                                     id="final-total-btn">Calculate Total</button>
-                                <p class="text-white ">Total: $ <span id="final-total" class="text-danger ms-5">0</span>
+                                <p class="text-white ">Total <span class="ps-5 ms-5 text-danger">$ <span id="final-total" ></span></span>
                                 </p>
                         </div>
                         <!-- Budget end -->
@@ -231,6 +233,17 @@
             </div>
         </div>
     </main>
+  
+        <footer class=" text-center text-white  ">
+  
+          <!-- Copyright -->
+            <div class="text-center  ">
+              © 2022 Copyright:
+              <a class="text-white" href="https://mdbootstrap.com/">All Rights Reserved</a>
+            </div>
+            <!-- Copyright -->
+          </footer>
+  
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
 </script>
